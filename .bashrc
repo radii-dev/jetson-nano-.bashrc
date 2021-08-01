@@ -120,7 +120,7 @@ fi
 alias eb='gedit ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias ssn='sudo shutdown now'
-alias srn='sudo restart now'
+alias srn='sudo reboot now'
 
 function fan_on { sudo sh -c "echo $1 > /sys/devices/pwm-fan/target_pwm"; }
 alias fon=fan_on
