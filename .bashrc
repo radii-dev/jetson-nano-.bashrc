@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # user alias and function
-alias eb='gedit ~/.bashrc'
+alias eb='vi ~/.bashrc'
 alias sb='source ~/.bashrc'
 alias ssn='sudo shutdown now'
 alias srn='sudo reboot now'
