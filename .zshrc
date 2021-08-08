@@ -106,6 +106,16 @@ alias vim='nvim'
 alias vi='nvim'
 alias vimdiff='nvim -d'
 
+# user setting for use ssh
+alias sshw1='ssh radii@192.168.0.48'
+alias sshw2='ssh radii@192.168.0.49'
+
+# user setting for github
+alias gs='git status'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gp='git push origin master'
+
 # user alias and function
 alias eb='vi ~/.zshrc'
 alias sb='source ~/.zshrc'
