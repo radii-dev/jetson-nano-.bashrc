@@ -38,5 +38,5 @@ vi ~/.config/nvim/init.vim
 sudo apt-get install clangd-9   
 
 # Install tmux
-sudo apt-get install tmux
-cp -i .tmux,conf ~/.tmux.conf
+sudo apt-get install tmux   
+cp -i .tmux,conf ~/.tmux.conf   
