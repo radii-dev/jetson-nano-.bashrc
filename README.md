@@ -75,3 +75,14 @@ sudo apt-get install bear
 # Install tmux
 sudo apt-get install tmux   
 cp -i .tmux,conf ~/.tmux.conf   
+
+# Install jtop
+sudo apt-get install git cmake   
+sudo apt-get install python3-dev   
+sudo apt-get install libhdf5-serial-dev hdf5-tools   
+sudo apt-get install libatlas-base-dev gfortran   
+sudo apt-get install python3-pip   
+pip3 install --upgrade pip   
+sudo -H pip3 install -U jetson-stats   
+reboot   
+
