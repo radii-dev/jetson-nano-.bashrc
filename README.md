@@ -2,13 +2,13 @@
 bashrc alias setting in jetson nano   
 
 # Initial setting for jetson nano
-```console
+```bash
 sudo apt-get update   
 sudo apt-get install git   
 git clone https://github.com/radii-dev/jetson-nano-.bashrc.git   
 ```
 # Install zsh and oh-my-zsh
-```console
+```bash
 sudo apt-get install zsh   
 chsh -s /usr/bin/zsh   
 reboot   
@@ -18,12 +18,12 @@ cp -i .zshrc ~/.zshrc
 source ~/.zshrc   
 ```
 # Install neovim
-```console
+```bash
 sudo add-apt-repository ppa:neovim-ppa/unstable   
 sudo apt-get update   
 sudo apt-get install neovim   
 ```
-```console
+```bash
 nvim   
 :call mkdir(stdpath('config'), 'p'))   
 :exe 'edit '.stdpath('config').'/init.vim'   
@@ -48,12 +48,12 @@ add
     "coc.preferences.currentFunctionSymbolAutoUpdate": true
 }
 ```
-```console
+```bash
 :wq
 ```
 
 ## i) arm64/linux   
-```console
+```bash
 sudo apt-get install clangd-9   
 vi   
 :CocConfig
@@ -65,11 +65,11 @@ add
     ...
 }
 ```
-```console
+```bash
 :wq   
 ```
 ## ii) others   
-```console
+```bash
 vi   
 :CocCommand clangd.install   
 :wq   
@@ -79,17 +79,17 @@ add
 ```bash
 export PATH=$PATH:~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
 ```
-```console
+```bash
 source ~/.zshrc   
 sudo apt-get install bear   
 ```
 # Install tmux
-```console
+```bash
 sudo apt-get install tmux   
 cp -i .tmux,conf ~/.tmux.conf   
 ```
 # Install jtop
-```console
+```bash
 sudo apt-get install git cmake   
 sudo apt-get install python3-dev   
 sudo apt-get install libhdf5-serial-dev hdf5-tools   
