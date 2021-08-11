@@ -35,7 +35,42 @@ vi ~/.config/nvim/init.vim
 :PlugInstall   
 :CocInstall coc-clangd   
 :wq   
+vi   
+:CocConfig   
+add
+```json
+{
+    "clangd.semanticHighlighting": true,
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true
+}
+```
+:wq
+
+
+i) arm64/linux   
 sudo apt-get install clangd-9   
+vi   
+:CocConfig   
+add
+```json
+{
+    "clangd.path": "/usr/bin/clangd-9"
+    ...
+}
+```
+:wq   
+
+ii) others   
+vi   
+:CocCommand clangd.install   
+:wq   
+vi ~/.zshrc   
+add
+```bash
+export PATH=$PATH:~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
+```
+source ~/.zshrc   
+sudo apt-get install bear   
 
 # Install tmux
 sudo apt-get install tmux   
