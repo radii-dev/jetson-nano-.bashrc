@@ -2,12 +2,13 @@
 bashrc alias setting in jetson nano   
 
 # Initial setting for jetson nano
-
+```console
 sudo apt-get update   
 sudo apt-get install git   
 git clone https://github.com/radii-dev/jetson-nano-.bashrc.git   
-
+```
 # Install zsh and oh-my-zsh
+```console
 sudo apt-get install zsh   
 chsh -s /usr/bin/zsh   
 reboot   
@@ -15,12 +16,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo apt-get install fonts-powerline   
 cp -i .zshrc ~/.zshrc   
 source ~/.zshrc   
-
+```
 # Install neovim
+```console
 sudo add-apt-repository ppa:neovim-ppa/unstable   
 sudo apt-get update   
 sudo apt-get install neovim   
-   
+```
+```console
 nvim   
 :call mkdir(stdpath('config'), 'p'))   
 :exe 'edit '.stdpath('config').'/init.vim'   
@@ -36,7 +39,8 @@ vi ~/.config/nvim/init.vim
 :CocInstall coc-clangd   
 :wq   
 vi   
-:CocConfig   
+:CocConfig
+```
 add
 ```json
 {
@@ -44,13 +48,16 @@ add
     "coc.preferences.currentFunctionSymbolAutoUpdate": true
 }
 ```
+```console
 :wq
+```
 
-
-i) arm64/linux   
+## i) arm64/linux   
+```console
 sudo apt-get install clangd-9   
 vi   
-:CocConfig   
+:CocConfig
+```
 add
 ```json
 {
@@ -58,25 +65,31 @@ add
     ...
 }
 ```
+```console
 :wq   
-
-ii) others   
+```
+## ii) others   
+```console
 vi   
 :CocCommand clangd.install   
 :wq   
 vi ~/.zshrc   
+```
 add
 ```bash
 export PATH=$PATH:~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin
 ```
+```console
 source ~/.zshrc   
 sudo apt-get install bear   
-
+```
 # Install tmux
+```console
 sudo apt-get install tmux   
 cp -i .tmux,conf ~/.tmux.conf   
-
+```
 # Install jtop
+```console
 sudo apt-get install git cmake   
 sudo apt-get install python3-dev   
 sudo apt-get install libhdf5-serial-dev hdf5-tools   
@@ -85,4 +98,5 @@ sudo apt-get install python3-pip
 pip3 install --upgrade pip   
 sudo -H pip3 install -U jetson-stats   
 reboot   
+```
 
