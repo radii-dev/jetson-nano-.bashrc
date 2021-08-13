@@ -1,5 +1,6 @@
 # jetson-nano-.bashrc
 bashrc alias setting in jetson nano   
+add how to setup zsh and neovim, tmux, jtop   
 
 # Initial setting for jetson nano
 ```bash
