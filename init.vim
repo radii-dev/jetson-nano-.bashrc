@@ -13,6 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'morhetz/gruvbox'
 Plug 'chrisbra/csv.vim'
+Plug 'vim-scripts/delimitMate.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -279,6 +280,8 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
+"set delimitMate
+let delimitMate_expand_cr=1
 "====================================================================================================
 "avoid overriding variables py Vim filetype
 autocmd FileType python setlocal tabstop=4a
