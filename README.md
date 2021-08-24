@@ -100,4 +100,3 @@ pip3 install --upgrade pip
 sudo -H pip3 install -U jetson-stats   
 reboot   
 ```
-
