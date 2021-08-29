@@ -87,7 +87,7 @@ sudo apt-get install bear
 # Install tmux
 ```bash
 sudo apt-get install tmux   
-cp -i .tmux,conf ~/.tmux.conf   
+cp -i .tmux.conf ~/.tmux.conf   
 ```
 # Install jtop
 ```bash
