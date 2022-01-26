@@ -113,14 +113,14 @@ alias sshw2='ssh radii@192.168.0.49'
 # user setting for github
 alias gs='git status'
 alias ga='git add .'
-alias agi='sudo apt-get install'
-alias agu='sudo apt-get update'
 alias gc='git commit -m'
 alias gp='git push origin master'
 
 # user alias and function
 alias eb='vi ~/.zshrc'
 alias sb='source ~/.zshrc'
+alias agi='sudo apt-get install'
+alias agu='sudo apt-get update'
 alias ssn='sudo shutdown now'
 alias srn='sudo reboot now'
 
