@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/radii/.oh-my-zsh"
+export ZSH="/home/radii/.oh-my-zsh" # Change directory
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -113,6 +113,8 @@ alias sshw2='ssh radii@192.168.0.49'
 # user setting for github
 alias gs='git status'
 alias ga='git add .'
+alias agi='sudo apt-get install'
+alias agu='sudo apt-get update'
 alias gc='git commit -m'
 alias gp='git push origin master'
 
