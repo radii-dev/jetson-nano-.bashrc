@@ -26,7 +26,7 @@ sudo apt-get install neovim
 ```
 ```bash
 nvim   
-:call mkdir(stdpath('config'), 'p'))   
+:call mkdir(stdpath('config'), 'p')
 :exe 'edit '.stdpath('config').'/init.vim'   
 :wq   
 cp -i init.vim ~/.config/nvim/init.vim   
