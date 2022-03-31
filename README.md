@@ -5,7 +5,7 @@ add how to setup zsh and neovim, tmux, jtop
 # Initial setting for jetson nano
 ```bash
 sudo apt-get update   
-sudo apt-get install git   
+sudo apt-get install git curl   
 git clone https://github.com/radii-dev/jetson-nano-.bashrc.git   
 ```
 # Install zsh and oh-my-zsh
