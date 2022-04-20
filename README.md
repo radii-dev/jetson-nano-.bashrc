@@ -1,21 +1,21 @@
 # jetson-nano-.bashrc
-bashrc alias setting in jetson nano   
-add how to setup zsh and neovim, tmux, jtop   
+bashrc alias setting in jetson nano
+add how to setup zsh and neovim, tmux, jtop
 
 # Initial setting for jetson nano
 ```bash
-sudo apt-get update   
-sudo apt-get install git curl   
-git clone https://github.com/radii-dev/jetson-nano-.bashrc.git   
+sudo apt-get update
+sudo apt-get install git curl
+git clone https://github.com/radii-dev/jetson-nano-.bashrc.git
 ```
 # Install zsh and oh-my-zsh
 ```bash
-sudo apt-get install zsh   
-chsh -s /usr/bin/zsh   
-reboot   
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"   
-sudo apt-get install fonts-powerline   
-cp -i .zshrc ~/.zshrc   
+sudo apt-get install zsh
+chsh -s /usr/bin/zsh
+reboot
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt-get install fonts-powerline
+cp -i .zshrc ~/.zshrc
 source ~/.zshrc   
 ```
 # Install neovim
